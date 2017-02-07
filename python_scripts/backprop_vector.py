@@ -1,5 +1,5 @@
 import numpy as np
-from data_prep import features, targets, features_test, targets_test
+from dataprep import features, targets, features_test, targets_test
 
 np.random.seed(42)
 
@@ -11,14 +11,16 @@ def sigmoid_prime(x):
 
 # Hyperparameters
 n_hidden = 3  # number of hidden units
-epochs = 50
-learnrate = 0.05
+epochs = 500
+learnrate = 0.1
 
 n_records, n_features = features.shape
 last_loss = None
 # Initialize weights
 weights_input_hidden = np.random.normal(scale=1 / n_features ** .5, size=(n_features, n_hidden))
 weights_hidden_output = np.random.normal(scale=1 / n_features ** .5, size=n_hidden)
+
+print(weights_input_hidden.shape)
 
 for e in range(epochs):
     del_w_input_hidden = np.zeros(weights_input_hidden.shape)
