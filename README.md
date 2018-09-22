@@ -19,3 +19,5 @@ Below, you can find my projects in this nanodegree program with a short descript
 [Project 2](./Project_Sentiment_Analysis/Sentiment_Analysis_Keras_Zikri.ipynb) - Movie sentiment classification in Keras.<br>
 <br>
 [Project 3](./Project_notMNIST_recognition/project_NOTmnist_Keras.ipynb) - notMNIST classification in Keras.<br>
+<br>
+[Project 4](./Autoencoders_in_Keras_v1.ipynb) - Autoencoders in Keras using Fashion_MNIST built in Google Colab.<br>
